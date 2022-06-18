@@ -1,1 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+<link href="assets/images/favicon.ico" rel="icon" />
+<title>База Знаний | Sample Academy</title>
+<meta name="description" content="База Знаний | Sample Academy">
 
+<!-- Stylesheet
+============================== -->
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+<!-- Font Awesome Icon -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css" />
+<!-- Magnific Popup -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css" />
+<!-- Highlight Syntax -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css" />
+<!-- Custom Stylesheet -->
+<link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
+</head>
+
+<body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
+
+<!-- Preloader -->
+<div class="preloader">
+  <div class="lds-ellipsis">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<!-- Preloader End --> 
+
+<!-- Document Wrapper   
+=============================== -->
+<div id="main-wrapper"> 
+  
+  <!-- Header
+  ============================ -->
+  <header id="header" class="sticky-top"> 
+    <!-- Navbar -->
+    <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark">
+      <div class="container-fluid">
+        <!-- Sidebar Toggler -->
+		<button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span class="w-75"></span><span class="w-50"></span></button>
+		
+		<!-- Logo --> 
+        <a class="logo ml-md-3" href="https://ru.sampleacademy.org"> <img src="assets/images/logo.png"/> </a> 
+		<span class="text-2 ml-2"></span> 
+        <!-- Logo End -->
+        
+		<!-- Navbar Toggler -->
+		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#header-nav"><span></span><span></span><span></span></button>
+        
+		<div id="header-nav" class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav">
+            <li><a href="https://ru.sampleacademy.org">Главная</a></li>
+            <li class="dropdown"> <a class="dropdown-toggle" href="#">&#127760</a>
+              <ul class="dropdown-menu">
+		            <li><a class="dropdown-item" href="https://kb.sampleacademy.org/ru">Русский</a></li>
+                <li><a class="dropdown-item" href="https://kb.sampleacademy.org/cn">中文（简体）</a></li>
+		            <li><a class="dropdown-item" href="https://kb.sampleacademy.org">English</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End --> 
+  </header>
+  <!-- Header End --> 
+  
+  <!-- Content
+  ============================ -->
+  <div id="content" role="main">
+    
+	<!-- Sidebar Navigation
+	============================ -->
+	<div class="idocs-navigation bg-light">
+      <ul class="nav flex-column ">
+        <li class="nav-item"><a class="nav-link active" href="#idocs_start">Начало работы</a>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#Visit_Sample_Academy">Посетите Sample Academy</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Registration">Реестр</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Login">Войти</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Logout">Выйти из системы</a></li>
+          </ul>
+        </li>
+        <!--
+        <li class="nav-item"><a class="nav-link" href="#idocs_layout">Layout</a>
+          <ul class="nav flex-column">
+			<li class="nav-item"><a class="nav-link" href="#idocs_header">Header</a></li>
+			<li class="nav-item"><a class="nav-link" href="#idocs_navbar">Navbar</a></li>
+			<li class="nav-item"><a class="nav-link" href="#idocs_sidebar">Sidebar</a></li>
+			<li class="nav-item"><a class="nav-link" href="#idocs_footer">Footer</a></li>
+			<li class="nav-item"><a class="nav-link" href="#idocs_box_layout">Box Layout</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#idocs_content">Content</a>
+			<ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#idocs_typography">Typography</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_code">Code</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_table">Table</a></li>
+			<li class="nav-item"><a class="nav-link" href="#idocs_icons">Icons</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_image">Image</a></li>
+			<li class="nav-item"><a class="nav-link" href="#idocs_video">Video</a></li>
+          </ul>
+		</li>
+        <li class="nav-item"><a class="nav-link" href="#idocs_components">Components</a>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#idocs_accordion">Accordion</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_tabs">Tabs</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_social_icon">Social Icon</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_helper_classes">Helper Classes</a></li>
+          </ul>
+        </li>
+		<li class="nav-item"><a class="nav-link" href="#idocs_faq">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="#idocs_source_credits">Source & Credits</a></li>
+        <li class="nav-item"><a class="nav-link" href="#idocs_support">Support</a></li>
+		<li class="nav-item"><a class="nav-link" href="#idocs_templates">More Templates</a></li>
+		<li class="nav-item"><a class="nav-link" href="#idocs_changelog">Changelog</a>
+			<ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#v1-1">v1.1</a></li>
+            <li class="nav-item"><a class="nav-link" href="#v1-0">v1.0</a></li>
+          </ul>
+	</li>
+        --> 
+      </ul>
+    </div>
+   
+    <!-- Docs Content
+	============================ -->
+    <div class="idocs-content">
+      <div class="container"> 
+        
+        <!-- Getting Started
+		============================ -->
+        <section id="idocs_start">
+        <h1>База Знаний</h1>
+        <h2>Добро пожаловать в базу знаний Sample Academy!</h2>
+	<p>Здесь мы приводим некоторые сведения и руководства, которые помогут вам пользоваться нашими сайтами и услугами. Если у вас остались вопросы, пожалуйста, <strong><a href="https://forms.yandex.ru/cloud/61c79b32cb58f9d94bb327c9/">свяжитесь с нами</a></strong>.</p>
+	<HR>	
+        <!-- Visit_Sample_Academy
+		============================ -->
+        <section id="Visit_Sample_Academy">
+          <h2>Посетите Sample Academy</h2>
+          <p class="lead">Вы можете посетить наш сайт, сделав одно из следующих действий:</p>
+          <ol>
+            <li>Введите <em>https://ru.sampleacademy.org/</em> в веб-браузере.</li>
+            <li>Наберите <em>Sample Academy</em> в поисковых системах, таких как Google, Bing, DuckDuckGo, Yandex и так далее.</li>
+        </section>
+          </ol>
+	<p class="alert alert-info">Мы настоятельно рекомендуем вам добавить наш сайт в закладки.</p>
+        </section>
+		
+        <!-- Registration
+		============================ -->
+        <section id="Registration">
+          <h2>Реестр</h2>
+	  <p class="lead">IЧтобы получить доступ ко всем нашим сайтам и услугам, вам необходимо зарегистрировать учетную запись Sample Academy / SamplEdu Central Authentication Service (CAS). Здесь мы приводим инструкцию, которая научит вас, как зарегистрировать учетную запись Sample Academy / SamplEdu Central Authentication Service (CAS). Обратите внимание, что для регистрации вы можете использовать как <strong>электронную почту учетной записи Microsoft</strong>, так и <strong>электронную почту, не принадлежащую Microsoft</strong>.</p>
+            <ol>
+	    <strong><li>Зарегистрируйтесь с помощью электронной почты учетной записи Microsoft</li></strong>
+		  <p></p>
+		  <p><strong>Шаг 1: </strong> Посетите сайт <em> <a href="https://ru.sampleacademy.org/cas/">https://ru.sampleacademy.org/cas/</a> </em> или нажмите &#128100 в меню сайта <a href="https://ru.sampleacademy.org">Sample Academy</a>.</p>
+		  <p><strong>Шаг 2: </strong> Нажмите на кнопку <em>Войти & Реестр</em>.</p>
+	          <p><strong>Шаг 3: </strong> Нажмите кнопку <em>Создайте ее!</em>.</p>
+	          <p><strong>Шаг 4: </strong> Выберите  <em>Регистрация по учетной записи Майкрософт</em>.</p>
+		  <p><strong>Шаг 5: </strong> Введите адрес электронной почты вашей учетной записи Microsoft в блок и нажмите кнопку <em>Далее</em>.</p>
+		  <p><strong>Шаг 6: </strong> Введите пароль своей учетной записи Microsoft и нажмите на <em>Вход</em>.</p>
+	          <p><strong>Шаг 7: </strong> Выберите, хотите ли вы оставаться под своим логином.</p>
+		  <p class="alert alert-info">Мы рекомендуем выбрать <em>Нет</em>, если вы не используете собственное устройство.</p>
+	          <p><strong>Шаг 8: </strong> Просмотрите разрешения и нажмите кнопку <em>Принять</em>.</p>
+		  <p class="alert alert-info">Если вы не согласитесь, вы не сможете зарегистрировать аккаунт Sample Academy / SamplEdu CAS.</p>
+		  <p><strong>Шаг 9: </strong> Заполните все блоки, относящиеся к вашей основной информации, и нажмите кнопку <em>Продолжить</em>.</p>
+		  <p><strong>Шаг 10: </strong> Вы автоматически войдете в систему и увидите главную страницу Sample Academy. Реестр успешно!</p>
+            <strong><li>Регистрация с помощью электронной почты, не относящейся к учетной записи Microsoft</li></strong>
+		  <p></p>
+		  <p><strong>Шаг 1: </strong> Посетите сайт <em> <a href="https://ru.sampleacademy.org/cas/">https://ru.sampleacademy.org/cas/</a> </em> или нажмите &#128100 в меню сайта <a href="https://ru.sampleacademy.org">Sample Academy</a>.</p>
+		  <p><strong>Шаг 2: </strong> Нажмите на кнопку <em>Войти & Реестр</em>.</p>
+	          <p><strong>Шаг 3: </strong> Нажмите кнопку <em>Создайте ее!</em>.</p>
+	          <p><strong>Шаг 4: </strong> Выберите  <em>Регистрация по адресу электронной почты</em>.</p>
+		  <p><strong>Шаг 5: </strong> Введите адрес электронной почты вашей учетной записи не относящийся к учетной записи Microsoft в блок и нажмите кнопку <em>Далее</em>.</p>
+		  <p><strong>Шаг 6: </strong> Получите проверочный код из почтового ящика или раздела спама.</p>
+		  <p><strong>Шаг 7: </strong> Введите проверочный код в блок и нажмите <em>Вход</em>.</p>
+	          <p><strong>Шаг 8: </strong> Просмотрите разрешения и нажмите кнопку <em>Принять</em>.</p>
+		  <p class="alert alert-info">Если вы не согласитесь, вы не сможете зарегистрировать аккаунт Sample Academy / SamplEdu CAS.</p>
+		  <p><strong>Шаг 9: </strong> Заполните все блоки, относящиеся к вашей основной информации, и нажмите кнопку <em>Продолжить</em>.</p>
+		  <p><strong>Шаг 10: </strong> Вы автоматически войдете в систему и увидите главную страницу Sample Academy. Реестр успешно!</p>
+		  <p></p>
+        </section>
+	<p class="alert alert-info">Если для регистрации вы используете электронную почту учетной записи Microsoft, то в будущем вы будете входить на наши веб-сайты и сервисы с помощью электронной почты и пароля учетной записи Microsoft. Однако по соображениям безопасности, если вы используете для регистрации электронную почту, не принадлежащую учетной записи Microsoft, в будущем вам придется каждый раз входить на наши веб-сайты и сервисы с проверочным кодом.</p>
+        
+		        
+	<!-- Login
+		============================ -->
+        <section id="Login">
+          <h2>Войти</h2>
+	  <p class="lead">When you have a Sample Academy / SamplEdu Central Authentication Service account, you can login to all of our websites and services with the account and its credential. Аналогично процессу регистрации. Существует два способа входа в систему: вы можете войти в систему с помощью <em>электронной почты учетной записи Microsoft</em> или <em>электронной почты, не принадлежащей Microsoft</em></p>.
+            <ol>
+	    <strong><li>Войти в систему с помощью электронной почты учетной записи Microsoft</li></strong>
+		  <p></p>
+		  <p><strong>Шаг 1: </strong> Посетите сайт <em> <a href="https://ru.sampleacademy.org/cas/">https://ru.sampleacademy.org/cas/</a> </em> или нажмите &#128100 в меню сайта <a href="https://ru.sampleacademy.org">Sample Academy</a>.</p>
+		  		  <p><strong>Шаг 2: </strong> Нажмите на кнопку <em>Войти & Реестр</em>.</p>
+		  <p><strong>Шаг 3: </strong> Введите адрес электронной почты вашей учетной записи Microsoft в блок и нажмите кнопку <em>Далее</em>.</p>
+		  <p><strong>Шаг 4: </strong> Введите пароль своей учетной записи Microsoft и нажмите на <em>Вход</em>.</p>
+	          <p><strong>Шаг 5: </strong> Выберите, хотите ли вы оставаться под своим логином.</p>
+	          		  <p class="alert alert-info">Мы рекомендуем выбрать <em>Нет</em>, если вы не используете собственное устройство.</p>
+		  <p><strong>Шаг 6: </strong> Вы войдете в систему и увидите сайт или сервис Sample Academy. Успешного входа!</p>
+            <strong><li>Войти в систему с помощью электронной почты, не относящейся к учетной записи Microsoft</li></strong>
+		  <p></p>
+		  <p><strong>Шаг 1: </strong> Посетите сайт <em> <a href="https://ru.sampleacademy.org/cas/">https://ru.sampleacademy.org/cas/</a> </em> или нажмите &#128100 в меню сайта <a href="https://ru.sampleacademy.org">Sample Academy</a>.</p>
+		  		  <p><strong>Шаг 2: </strong> Нажмите на кнопку <em>Войти & Реестр</em>.</p>
+		  <p><strong>Шаг 3: </strong> Введите адрес электронной почты вашей учетной записи не относящийся к учетной записи Microsoft в блок и нажмите кнопку <em>Далее</em>.</p>
+		  <p><strong>Шаг 4: </strong> Получите проверочный код из почтового ящика или раздела спама.</p>
+		  <p><strong>Шаг 5: </strong> Введите проверочный код в блок и нажмите <em>Вход</em>.</p>
+		  <p><strong>Шаг 6: </strong> Вы войдете в систему и увидите сайт или сервис Sample Academy. Успешного входа!</p>
+		  <p></p>
+        </section>
+	<p class="alert alert-info">По соображениям безопасности, если вы используете для регистрации электронную почту, отличную от учетной записи Microsoft, в будущем вам придется каждый раз входить на наши сайты и сервисы с проверочным кодом. Если с вашей учетной записью будут совершаться подозрительные действия (например, слишком частое вхождение в систему с проверочным кодом за короткое время), мы временно заблокируем вашу учетную запись для ее защиты. Вы можете <strong><a href="https://forms.yandex.ru/cloud/61c79b32cb58f9d94bb327c9/">связаться с нами</a></strong>, чтобы разблокировать свой аккаунт.</p>	
+	<!-- Logout
+		============================ -->
+        <section id="Logout">
+          <h2>Выйти из системы</h2>
+	  <p class="lead">Чтобы было достаточно удобно, вы не выйдете из системы, пока не закроете веб-браузер и не очистите куки. Проще говоря, если вы хотите выйти из системы, вам нужно просто очистить куки, закрыть веб-браузер и завершить все сеансы просмотра.</p>
+        </section>
+	<p class="alert alert-info">Для обеспечения наилучшего опыта мы используем такие технологии, как cookies, для хранения и/или доступа к информации об устройстве. Согласие на использование этих технологий позволит нам обрабатывать такие данные, как поведение при просмотре или уникальные идентификаторы на этом сайте. Отказ от согласия или отзыв согласия может негативно повлиять на некоторые возможности и функции. Пожалуйста, ознакомьтесь с нашей политикой использования <strong><a href="https://www.sampleacademy.org/cookies-policy/">файлов cookies</a></strong> для получения дополнительной информации.</p>	
+        
+		<hr class="divider">
+		
+	<!-- Layout
+		============================ -->
+		
+        <!-- Header
+		============================ -->
+		
+	<!-- Navbar
+		============================ -->
+		
+	<!-- Sidebar
+		============================ -->
+		
+        <!-- Footer
+		============================ -->
+		
+	<!-- Box Layout Style
+		============================ -->
+		
+	<!-- Content
+		============================ -->
+		
+	<!-- Typography
+		============================ -->
+		
+	<!-- Code
+		============================ -->
+		
+	<!-- Table
+		============================ -->
+		
+	<!-- Icons
+		============================ -->
+		
+	<!-- Image
+		============================ -->
+ 
+	<!-- Video
+		============================ -->
+		
+        <!-- Components
+		============================ -->
+		  
+        <!-- Accordion
+		  ============================ -->
+		  
+	<!-- Tabs
+		  ============================ -->
+		  		  
+        <!-- Social Icon
+		  ============================ -->
+
+	<!-- Helper Classes
+		  ============================ -->
+		
+	<!-- FAQ
+		============================ -->
+        
+        <!-- Source & Credits
+		============================ -->
+		
+	<!-- More Templates
+		============================ -->
+		
+        <!-- Changelog
+		============================ -->
+        
+      </div>
+    </div>
+	
+  </div>
+  <!-- Content end --> 
+  
+  <!-- Footer
+  ============================ -->
+  <footer id="footer" class="section bg-dark footer-text-light">
+    <div class="container">
+      <p class="text-center">&copy; <a href="https://ru.sampleacademy.org">Sample Academy</a></p>
+    </div>
+  </footer>
+  <!-- Footer end -->
+  
+</div>
+<!-- Document Wrapper end --> 
+
+<!-- Back To Top --> 
+<a id="back-to-top" data-toggle="tooltip" title="Наверх" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
+
+<!-- JavaScript
+============================ -->
+<script src="assets/vendor/jquery/jquery.min.js"></script> 
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<!-- Highlight JS -->
+<script src="assets/vendor/highlight.js/highlight.min.js"></script> 
+<!-- Easing --> 
+<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script> 
+<!-- Magnific Popup --> 
+<script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script> 
+<!-- Custom Script -->
+<script src="assets/js/theme.js"></script>
+</body>
+</html>
